@@ -65,19 +65,20 @@ create table produtos(
     produto varchar(60) not null,
     cor varchar(30) not null,
     tamanho varchar(10) not null,
-    estampa varchar(20) not null,
+    estampa varchar(20),
     descricao text not null,
-    categoria varchar(255) not null,
+    categoria varchar(50) not null,
     fabricante varchar(100) not null,    
     datacad timestamp default current_timestamp not null,
     iniciovenda timestamp not null,
-    datavendido timestamp not null,
+    datavendido timestamp,
     estoque int not null,
     estoquemin int not null,
     unidade varchar(30) not null,
     setor varchar(100),
     custo decimal(10,2) not null,
     lucro decimal(10,2) not null,
+    venda decimal(10,2),
     foto1 varchar(255),
     foto2 varchar(255),
     foto3 varchar(255),
@@ -85,7 +86,7 @@ create table produtos(
     idfor int not null,
 	foreign key (idfor) references fornecedores (idfor)
     );
-    
+
 
 describe produtos;
     
@@ -93,23 +94,23 @@ describe produtos;
 select * from produtos;
 
 create table clientes (
- idcli int primary key auto_increment,
- login varchar(30) not null unique,
- senha varchar(255) not null,
- nome varchar (100) not null,
- fone varchar(20) not null,
- cpf varchar(15) not null unique,
-email varchar(50) unique not null,
-marketing char(3) not null,
-datanascimento timestamp,
-foto varchar(255) default "usuario.jpg",
-cep varchar(9),
-endereco varchar(60),
-bairro varchar(50),
-numero varchar(10),
-complemento varchar(50),
-cidade varchar(50),
-uf char(2)
+ idcli int primary key auto_increment,  1
+ login varchar(30) unique,  2
+ senha varchar(255),  3
+ nome varchar (100) not null, 4 
+ fone varchar(20) not null,  5
+ cpf varchar(15) not null unique, 6
+email varchar(50) unique not null, 7
+marketing char(3) not null, 8
+datanascimento timestamp, 9
+foto varchar(255) default "usuario.jpg", 10
+cep varchar(9), 11
+endereco varchar(60), 12
+bairro varchar(50), 13
+numero varchar(10), 14
+complemento varchar(50), 15
+cidade varchar(50), 16
+uf char(2) 17
 );
 
 
