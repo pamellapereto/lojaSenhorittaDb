@@ -90,8 +90,28 @@ create table produtos(
 
 describe produtos;
     
+    
+insert into produtos (produto, cor, tamanho, descricao, categoria, fabricante, iniciovenda, estoque, estoquemin, unidade, custo, lucro, idfor)
+values ("Blusa", "azul", "P", "Decote trabalhando em renda", "blusas", "Arazze", 20221105, 10, 5, "PÇ", 10.00, 100, 1);
+
+insert into produtos (produto, cor, tamanho, descricao, categoria, fabricante, iniciovenda, estoque, estoquemin, unidade, custo, lucro, venda, foto1, foto2, foto3, foto4, idfor)
+values ("Blusa", "azul", "M", "Amarração nas costas", "blusas", "Arazze", 20221106, 20, 8, "PÇ", 15.00, 100, 30.00, "https://img.ltwebstatic.com/images3_pi/2022/07/15/1657874703d3cae722d186c201e90dafdb5c3ae213_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/07/15/16578747000185408982dbfe69cfad42913bb99763_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/07/15/16578747081b30fca8acd829fce5e7de1caef595eb_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/07/15/16578747069ff989a0722774dbcae975eaeb5a5e14_thumbnail_600x.webp", 1);
+
+insert into produtos (produto, cor, tamanho, descricao, categoria, fabricante, iniciovenda, estoque, estoquemin, unidade, custo, lucro, venda, foto1, foto2, foto3, foto4, idfor)
+values ("Saia", "preto", "M", "Cintura alta, com uma pequena fenda", "saias", "Arazze", 20221106, 8, 3, "PÇ", 13.00, 100, 26.00, "https://img.ltwebstatic.com/images3_pi/2022/05/30/1653875123a11ef532b89790acf25488ce3b341b39_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/05/30/165387512117c6881d9687ec403e07e648455380b4_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/05/30/1653875118d0b22032dd6da7e7c76e57ebb6f43cba_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/05/30/16538751151c8face1cac3dae6b313e48c3827c7aa_thumbnail_600x.webp", 1);
+
+insert into produtos (produto, cor, tamanho, descricao, categoria, fabricante, iniciovenda, estoque, estoquemin, unidade, custo, lucro, venda, foto1, foto2, foto3, foto4, idfor)
+values ("Calça pantalona", "preto", "M", "Calça com botão na frente e zíper com cinto, tecido alfaiataria", "calças", "Arazze", 20221106, 18, 9, "PÇ", 40.00, 100, 80.00, "https://img.ltwebstatic.com/gspCenter/goodsImage/2022/8/20/8046863309_1006933/5A232AD5F1937BAE2512F4A87229373D_thumbnail_600x.jpg", "https://img.ltwebstatic.com/gspCenter/goodsImage/2022/8/20/8046863309_1006933/25BC2EB74F14435B08077A0ABC905A2E_thumbnail_600x.jpg", "https://img.ltwebstatic.com/gspCenter/goodsImage/2022/8/20/8046863309_1006933/E3422CDC6845B79E420847F00A1A5055_thumbnail_600x.jpg", "https://img.ltwebstatic.com/gspCenter/goodsImage/2022/8/20/8046863309_1006933/6BE770BF15ED911C8A164F992F57D921_thumbnail_600x.jpg", 1);
+
+insert into produtos (produto, cor, tamanho, descricao, categoria, fabricante, iniciovenda, estoque, estoquemin, unidade, custo, lucro, venda, foto1, foto2, foto3, foto4, idfor)
+values ("Vestido florido", "azul", "P", "Vestido com fenda na coxa, estampa tropical", "vestidos", "Arazze", 20221106, 11, 6, "PÇ", 75.00, 100, 150.00, "https://img.ltwebstatic.com/images3_pi/2022/04/14/1649944903f423817e330afa29664d00d1ca8d9275_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/04/14/16499449059a335f9060f67182363d8cf18541e48b_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/04/14/164994490666b9d43c2a16ceed172827c65361b8e5_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2022/04/14/16499449081cde8b638b667a7ec504d98679775209_thumbnail_600x.webp", 1);
+
+insert into produtos (produto, cor, tamanho, descricao, categoria, fabricante, iniciovenda, estoque, estoquemin, unidade, custo, lucro, venda, foto1, foto2, foto3, foto4, idfor)
+values ("Macacão florido", "preto", "M", "Macacão com bolso em estampa floral", "macacoes", "Arazze", 20221106, 7, 3, "PÇ", 55.00, 100, 105.00, "https://img.ltwebstatic.com/images3_pi/2021/06/08/16231229519366dc1bdd66959d27d5c77e5f926050_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2021/06/08/1623122954b683083f97ad64956b7644ff0eef017f_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2021/06/08/162312295805564ae49a25d304581285ecc3055983_thumbnail_600x.webp", "https://img.ltwebstatic.com/images3_pi/2021/06/08/16231229610520e848b3f3da34be35e76ddeae4016_thumbnail_600x.webp", 1);
 
 select * from produtos;
+
+
 
 create table clientes (
  idcli int primary key auto_increment,  1
